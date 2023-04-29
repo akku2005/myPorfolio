@@ -32,3 +32,11 @@ var swiper = new Swiper(".mySwiper", {
         clickable:true,
       },
     });
+  
+// scrooll to top button
+
+const footerElem = document.querySelectorAll(".section-footer")
+const scroolElement = document.createElement("div");
+scroolElement.classList.add("scrollTop-style");
+scroolElement.innerHTML=`<ion-icon name="arrow-up-outline" class="scrll-top></ion-icon>`;
+footerElem.after(scroolElement); 
